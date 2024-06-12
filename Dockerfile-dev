@@ -1,0 +1,15 @@
+FROM node:16 AS build
+
+WORKDIR /toyota-indonesia-fe
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "start"]
+
+# docker build -t toyota-indonesia-fe-dev:1.0.0 -f Dockerfile-dev .
+# docker run -p 3008:3008 -d toyota-indonesia-fe-dev:1.0.0
+# OR
+# docker run -p 3008:3008 -v $(pwd):/toyota-indonesia-fe  -v /toyota-indonesia-fe/node_modules toyota-indonesia-fe-dev

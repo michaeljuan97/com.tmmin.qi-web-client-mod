@@ -1,0 +1,57 @@
+.table-data {
+  color: white;
+  margin: 0;
+}
+
+.toyota-grid {
+  padding: 0;
+  border: 0.02em solid white;
+  max-height: 18rem;
+  min-height: 18rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.header-row {
+  background-color: #1d2655;
+}
+
+.faulty-caption {
+  color: red;
+  padding: 1rem 0.25rem 0 0.8rem;
+}
+
+.no-faulty-caption {
+  color: white;
+  padding: 0 0.25rem 0.25rem 0.8rem;
+}
+
+.faulty-status {
+  text-transform: uppercase;
+}
+
+.no-faulty-status {
+  text-transform: uppercase;
+}
+
+.table-data .left-pad {
+  padding-left: 1em;
+}
+
+.table-data .header-row th {
+  position: sticky;
+  top: 0;
+  background-color: #1d2655;
+}
+
+.table-data .faulty-caption {
+  position: sticky;
+  bottom: 1.8em;
+  background-color: #1c1f2d;
+}
+
+.table-data .no-faulty-caption {
+  position: sticky;
+  bottom: 0;
+  background-color: #1c1f2d;
+}

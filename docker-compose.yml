@@ -1,0 +1,9 @@
+version: '3'
+services:
+  client:
+    image: toyota-indonesia-fe-prod_client:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"

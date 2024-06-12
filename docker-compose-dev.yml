@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  client:
+    image: toyota-indonesia-fe-dev
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    ports:
+      - "3008:3008"
+    volumes:
+      - .:/toyota-indonesia-fe
+      - /toyota-indonesia-fe/node_modules
+
+
+# docker-compose -f docker-compose-dev.yml up --build
+
+# start the development server
+# docker-compose -f docker-compose-dev.yml up
+
+# stop the development server
+# docker-compose -f docker-compose-dev.yml down
